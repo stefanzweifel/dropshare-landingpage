@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>__FILENAME__ | share.stefanzweifel.io</title>
+        <meta name="description" content="">
+        <link rel="author" href="humans.txt">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+                box-sizing: border-box;
+            }
+
+            a {
+                text-decoration: none;
+                color: #BEBEBE;
+            }
+
+            p {
+                color: #BEBEBE;
+            }
+
+            .header--page {
+                height: 50px;
+                padding: 15px;
+                border-bottom: 1px solid #ccc;
+                clear: both;
+                background: rgb(255,255,255);
+                background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(249,249,249,1) 100%);
+
+            }
+
+            .file-content {
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .column--6 {
+                width: 50%;
+                float: left;
+            }
+
+            .left { text-align: left; }
+            .center { text-align: center; }
+            .right { text-align: right; }
+
+            .preview {
+                border: 1px solid #eaeaea;
+                box-shadow: inset 0 0 5px 2px rgba(245, 245, 245, 0.56);
+                min-height: 200px;
+                margin: 20px;
+            }
+
+            .preview--text {
+                color: #BEBEBE;
+                font-size: 12px;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+
+        <header class="header--page">
+            <div class="left column--6">
+                <p>__FILENAME__</p>
+            </div>
+            <div class="right column--6">
+                <a class="btn btn-primary btn-lg" href="__PATH__" download="__FILENAME__">Download</a>
+            </div>
+        </header>
+
+        <main class="file-content" role="main">
+            <div class="preview">
+                __PREVIEW__
+            </div>
+            <div class="preview--text">
+                __FILESIZE__
+            </div>
+
+        </main>
+
+    </body>
+</html>
