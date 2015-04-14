@@ -3,15 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>__FILENAME__ | s.wnx.ch</title>
-        <meta name="description" content="">
-        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <title>__FILENAME__</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
         <style>
             * {
                 margin: 0;
                 padding: 0;
-                font-family: 'Roboto', sans-serif;
+                font-family: 'Open Sans', sans-serif;
                 box-sizing: border-box;
             }
 
@@ -26,6 +25,7 @@
 
             img {
                 max-width: 100%;
+                max-height: 80vh;
             }
 
             .truncate {
@@ -70,7 +70,25 @@
                 margin-top: 20px;
             }
 
+            video, iframe {
+                height: auto;
+                max-height: 80vh;
+                width: 100%;
+            }
+
+            iframe {
+                height: 80vh;
+            }
+
         </style>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="__FILENAME__">
+        <meta name="twitter:image" content="__PREVIEWURL__">
+
+        <meta property="og:title" content="__FILENAME__ shared by Dropshare.app" />
+        <meta property="og:site_name" content="__FILENAME__ shared by Dropshare.app"/>
+        <meta property="og:image" content="__PREVIEWURL__" />
 
     </head>
     <body>
@@ -80,7 +98,7 @@
                 <p class="truncate">__FILENAME__</p>
             </div>
             <div class="right column--6">
-                <a class="btn btn-primary btn-lg" href="__PATH__" download="__FILENAME__">Download</a>
+                <a class="btn btn-primary btn-lg" href="__PATH__" download>Download</a>
             </div>
         </header>
 
@@ -89,7 +107,9 @@
                 __PREVIEW__
             </div>
             <div class="preview--text">
-                __FILESIZE__
+                <footer>
+                    __FILESIZE__ (Shared at: __SHAREDATE__)
+                </footer>
             </div>
 
         </main>
