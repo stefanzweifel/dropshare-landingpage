@@ -2,16 +2,22 @@
 
 This is a simple, minimal HTML template you can use with [Dropshare](http://getdropsha.re/).
 
-![Preview]().
+![Preview](https://raw.githubusercontent.com/stefanzweifel/dropshare-landingpage/master/preview.png).
 
 ## Features
 
 - small CSS
 - [slack](http://slack.com) ready
 
-![Slack Preview]()
+![Slack Preview](https://raw.githubusercontent.com/stefanzweifel/dropshare-landingpage/master/slack.png)
 
 Simple minimal template to use with [Dropshare](http://getdropsha.re/) for filesharing.
+
+## Installation
+
+- Copy content of `index.html` into your local `Dropshare-LandingPage.html` file
+- ???
+- Profit!
 
 ## License
 
